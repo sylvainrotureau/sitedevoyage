@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+#top {
+  grid-area: top;
+  background: url(../images/beach.jpg);
+}
+
+#nav {
+  grid-area: nav;
+  background-color: #f2f7ba;
+  display: grid;
+  grid-template-columns: repeat 4, 25%;
+  grid-template-areas: "choice1 choice2 choice3 choice4";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#nav div {
+  align-self: center;
+}
+
+#nav div a {
+  text-decoration: none;
+  color: #2b80b9;
+}
+
+#nav #choice1 {
+  grid-area: choice1;
+}
+
+#nav #choice2 {
+  grid-area: choice2;
+}
+
+#nav #choice3 {
+  grid-area: choice3;
+}
+
+#nav #choice4 {
+  grid-area: choice4;
+}
+
+#header {
+  grid-area: header;
+  background: url(../images/bali.jpg);
+}
+
+#blog {
+  grid-area: blog;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "aside articles";
+}
+
+#blog #aside {
+  background-color: #2b80b9;
+  grid-area: aside;
+  display: grid;
+  grid-template-rows: 10vw 65vw 5vw;
+  grid-template-areas: "asidetitle" "comments" "bottombutton";
+  color: white;
+}
+
+#blog #aside #asidetitle {
+  grid-area: asidetitle;
+  text-align: center;
+}
+
+#blog #aside #asidetitle hr {
+  width: 60%;
+}
+
+#blog #aside #comments {
+  grid-area: comments;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "comment1" "comment2" "comment3" "comment4" "comment5";
+  text-align: center;
+}
+
+#blog #aside #comments .comment {
+  border: 1px solid #f2f7ba;
+  border-bottom: 4px solid #f2f7ba;
+  border-right: 4px solid #f2f7ba;
+  border-radius: 5%;
+  padding: 5%;
+  margin: 2%;
+}
+
+#blog #aside #comments .comment .commentwhowhen .commentuser {
+  font-style: italic;
+  border-radius: 50%;
+  width: 3vw;
+}
+
+#blog #aside #comments .comment .commentwhowhen .commentimage {
+  margin: 3%;
+  width: 20vw;
+  border: 4px solid white;
+}
+
+#blog #aside #comments #comment1 {
+  grid-area: comment1;
+}
+
+#blog #aside #comments #comment2 {
+  grid-area: comment2;
+}
+
+#blog #aside #comments #comment3 {
+  grid-area: comment3;
+}
+
+#blog #aside #comments #comment4 {
+  grid-area: comment4;
+}
+
+#blog #aside #comments #comment5 {
+  grid-area: comment5;
+}
+
+#blog #aside #bottombutton {
+  text-align: center;
+  grid-area: bottombutton;
+}
+
+#blog #articles {
+  grid-area: articles;
+}
+
+#partners {
+  grid-area: partners;
+  background: url(../images/plane.jpg);
+}
+
+#links {
+  grid-area: links;
+  background-color: #2b80b9;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-areas: 'link1 link2 link3';
+}
+
+#links div {
+  align-self: center;
+}
+
+#links div img {
+  width: 70%;
+}
+
+#links #link1 {
+  grid-area: link1;
+  background-color: #2b80b9;
+}
+
+#links #link2 {
+  grid-area: link2;
+}
+
+#links #link3 {
+  grid-area: link3;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #f2f7ba;
+  text-align: center;
+  color: #2b80b9;
+}
+
+#footer #socials i {
+  padding-right: 10px;
+  font-size: 1.5em;
+}
+
+html body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 35vh 15vh 50vh auto 50vh 15vh 15vh;
+  grid-template-areas: "top" "nav" "header" "blog" "partners" "links" "footer";
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+html body h1 {
+  font-size: 3rem;
+}
+
+html body .ranking {
+  font-size: 1em;
+}
+
+html body h2 {
+  font-size: 1em;
+}
+
+html body h3 {
+  font-size: 1em;
+}
+
+html body button {
+  border-radius: 8%;
+  background-color: #f2f7ba;
+  border: 1px solid white;
+  color: #2b80b9;
+  padding: 2% 5%;
+}
+/*# sourceMappingURL=style.css.map */

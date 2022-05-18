@@ -1,0 +1,13 @@
+#footer {
+    grid-area: footer;
+    background-color: $color2;
+    text-align: center;
+    color: $color1;
+    
+    #socials{
+i{
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+    }
+}
