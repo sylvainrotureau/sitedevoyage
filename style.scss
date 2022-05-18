@@ -19,11 +19,7 @@ html {
     body {
         display: grid;
         grid-template-columns: 100vw;
-<<<<<<< HEAD
-        grid-template-rows: 35vh 15vh 50vh 250vh 50vh 30vh 15vh;
-=======
         grid-template-rows: 35vh 15vh 50vh 250vh 50vh 35vh 15vh;
->>>>>>> 66c3b9f85fc13c8ca95a0e678971c231d35d1150
         grid-template-areas:
             "top"
             "nav"
