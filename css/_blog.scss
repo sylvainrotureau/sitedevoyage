@@ -36,7 +36,7 @@
                 "comment3"
                 "comment4"
                 "comment5";
-                text-align: center;
+            text-align: center;
 
 
             .comment {
@@ -44,12 +44,9 @@
                 border-bottom: 4px solid $color2;
                 border-right: 4px solid $color2;
                 border-radius: 5%;
-                padding: 5%;;
-                margin:2%;
-
-.commenthead  {
-    
-}
+                padding: 5%;
+                ;
+                margin: 2%;
 
                 .commentwhowhen {
                     .commentuser {
@@ -57,7 +54,7 @@
                         border-radius: 50%;
                         width: 3vw;
                     }
-        
+
                     .commentimage {
                         margin: 3%;
                         width: 20vw;
@@ -98,6 +95,62 @@
 
     #articles {
         grid-area: articles;
+        display: grid;
+        grid-template-rows: 25vw 65vw 5vw;
+        grid-template-areas:
+            "lastarticle"
+            "mainarticle1"
+            "mainarticle2"
+            "mainarticle3";
+        color: $color1;
+        text-align: center;
 
+        #lastarticle {
+            grid-area: lastarticle;
+
+            #title {
+                hr {
+                    width: 60%;
+                    color: $color2;
+                }
+            }
+
+            img {
+                width: 20%;
+            }
+        }
+
+        
+
+        .mainarticle {
+            .mainarticletitle {
+                hr {
+                    width: 60%;
+                    color: $color2;
+                }
+    
+            }
+
+            .commentwhowhen {
+                .commentuser {
+                    font-style: italic;
+                    border-radius: 50%;
+                    width: 3vw;
+                }
+
+                .commentimage {
+                    margin: 3%;
+                    width: 20vw;
+                    border: 4px solid $color2;
+                }
+            }
+        }
+
+        #mainarticle1 {
+            grid-area: mainarticle1;
+
+
+
+        }
     }
 }
