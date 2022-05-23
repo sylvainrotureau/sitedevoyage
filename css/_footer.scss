@@ -2,12 +2,15 @@
     background-color: $color2;
     text-align: center;
     color: $color1;
-    min-height: 10rem;
-    
-    #socials{
-i{
-    padding-right: 10px;
-    font-size: 1.5em;
-}
+
+    padding: 2rem;
+
+    #socials {
+        padding: 1rem;
+
+        i {
+            padding-right: 10px;
+            font-size: 1.5em;
+        }
     }
 }

@@ -1,12 +1,12 @@
 #header {
         background: url(../images/bali.jpg);
-        height: 50rem;
+        min-height: 30rem;
         background-position: center;
         background-size: cover;
 
         display: grid;
-        grid-template-columns: 5vh 20vh 75vh;
-        grid-template-rows: 15vh 75vh 10vh;
+        grid-template-columns: 5% 30% 65%;
+        grid-template-rows: 15vh 1fr 10vh;
 
         color: white;
         text-align: center;
@@ -17,6 +17,7 @@
                 grid-row: 2/3;
                 border-radius: 4%;
                 background-color: $color1;
+                padding: 1rem;
 
                 i {
                         font-size: 1.5rem;
@@ -24,12 +25,16 @@
 
                 .header-author {
                         img {
-                            font-style: italic;
-                            border-radius: 50%;
-                            width: 3vw;
+                                font-style: italic;
+                                border-radius: 50%;
+                                width: 3vw;
                         }
-            
-                    }
+                }
+        }
+
+        .header-h3 {
+                font-size: 2rem;
+
 
         }
 }

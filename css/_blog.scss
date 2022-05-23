@@ -3,13 +3,13 @@
     grid-template-columns: 40% 60%;
     grid-template-areas:
         "aside articles";
-        min-height: 140rem;
+        min-height: 90rem;
 
     #aside {
         background-color: $color1;
         grid-area: aside;
         display: grid;
-        grid-template-rows: 10vw 65vw 5vw;
+        grid-template-rows: 3% 94% 3%;
         grid-template-areas:
             "asidetitle"
             "comments"

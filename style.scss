@@ -19,6 +19,12 @@ html {
     body {
         font-family: 'RocknRoll One', sans-serif;
 
+        h1,
+        h2,
+        h3, p {
+            margin: 0;
+        }
+
         h1 {
             font-size: 3rem;
         }
