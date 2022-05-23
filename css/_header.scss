@@ -1,5 +1,35 @@
 #header {
-    background: url(../images/bali.jpg);
-    min-height: 30rem;
+        background: url(../images/bali.jpg);
+        height: 50rem;
+        background-position: center;
+        background-size: cover;
 
+        display: grid;
+        grid-template-columns: 5vh 20vh 75vh;
+        grid-template-rows: 15vh 75vh 10vh;
+
+        color: white;
+        text-align: center;
+
+
+        .header-card {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                border-radius: 4%;
+                background-color: $color1;
+
+                i {
+                        font-size: 1.5rem;
+                }
+
+                .header-author {
+                        img {
+                            font-style: italic;
+                            border-radius: 50%;
+                            width: 3vw;
+                        }
+            
+                    }
+
+        }
 }
