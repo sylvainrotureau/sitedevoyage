@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
 #top {
-  grid-area: top;
   background: url(../images/beach.jpg);
+  min-height: 20rem;
 }
 
 #nav {
-  grid-area: nav;
   background-color: #f2f7ba;
   display: grid;
   grid-template-columns: repeat 4, 25%;
   grid-template-areas: "choice1 choice2 choice3 choice4";
   column-gap: 10px;
   row-gap: 10px;
+  min-height: 5rem;
 }
 
 #nav div {
@@ -40,15 +40,15 @@
 }
 
 #header {
-  grid-area: header;
   background: url(../images/bali.jpg);
+  min-height: 30rem;
 }
 
 #blog {
-  grid-area: blog;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-areas: "aside articles";
+  min-height: 140rem;
 }
 
 #blog #aside {
@@ -128,16 +128,16 @@
 }
 
 #partners {
-  grid-area: partners;
   background: url(../images/plane.jpg);
+  min-height: 30rem;
 }
 
 #links {
-  grid-area: links;
   background-color: #2b80b9;
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-areas: 'link1 link2 link3';
+  min-height: 20rem;
 }
 
 #links div {
@@ -162,10 +162,10 @@
 }
 
 #footer {
-  grid-area: footer;
   background-color: #f2f7ba;
   text-align: center;
   color: #2b80b9;
+  min-height: 10rem;
 }
 
 #footer #socials i {
@@ -174,10 +174,6 @@
 }
 
 html body {
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 35vh 15vh 50vh auto 50vh 15vh 15vh;
-  grid-template-areas: "top" "nav" "header" "blog" "partners" "links" "footer";
   font-family: 'RocknRoll One', sans-serif;
 }
 

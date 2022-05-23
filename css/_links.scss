@@ -1,10 +1,10 @@
 #links {
-    grid-area: links;
 background-color: $color1;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-areas:
         'link1 link2 link3';
+        min-height: 20rem;
 
     div {
         align-self: center;

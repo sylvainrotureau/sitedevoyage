@@ -1,5 +1,4 @@
 #nav {
-    grid-area: nav;
     background-color: $color2;
     display: grid;
     grid-template-columns: repeat (4, 25%);
@@ -7,6 +6,7 @@
         "choice1 choice2 choice3 choice4";
     column-gap: 10px;
     row-gap: 10px;
+    min-height: 5rem;
 
     div {
         align-self: center;

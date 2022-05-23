@@ -17,18 +17,6 @@ $color2: #f2f7ba;
 html {
 
     body {
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 35vh 15vh 50vh auto 50vh 15vh 15vh;
-        grid-template-areas:
-            "top"
-            "nav"
-            "header"
-            "blog"
-            "partners"
-            "links"
-            "footer";
-
         font-family: 'RocknRoll One', sans-serif;
 
         h1 {

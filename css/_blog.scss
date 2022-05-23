@@ -1,10 +1,9 @@
 #blog {
-    grid-area: blog;
-
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas:
         "aside articles";
+        min-height: 140rem;
 
     #aside {
         background-color: $color1;
@@ -46,10 +45,6 @@
                 border-radius: 5%;
                 padding: 5%;;
                 margin:2%;
-
-.commenthead  {
-    
-}
 
                 .commentwhowhen {
                     .commentuser {
