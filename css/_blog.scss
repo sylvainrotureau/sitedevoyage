@@ -37,14 +37,12 @@
                 "comment5";
             text-align: center;
 
-
             .comment {
                 border: 1px solid $color2;
                 border-bottom: 4px solid $color2;
                 border-right: 4px solid $color2;
                 border-radius: 5%;
                 padding: 5%;
-                ;
                 margin: 2%;
 
                 .commentwhowhen {
@@ -60,7 +58,6 @@
                         border: 4px solid white;
                     }
                 }
-
             }
 
             #comment1 {
@@ -146,7 +143,6 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
-
             }
         }
 
@@ -154,26 +150,38 @@
             border-bottom: 1px solid $color1;
             padding: 1rem 0;
 
+            hr {
+                width: 20%;
+                border-color: $color2;
+            }
             .article-h3 {
                 margin: 1rem 0;
             }
 
-
             .article-author-date {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
                 align-items: center;
                 font-style: italic;
+                padding: 0 3rem;
+                justify-content: center;
+
+                display: flex;
+                    gap:0.5rem;
 
                 .article-author {
+                    display: flex;
+                    gap:0.5rem;
+
                     .article-author-image {
-                        width: 20%;
                         border-radius: 50%;
+                        width: 20%;
                     }
                 }
 
                 .article-date {
+                    display: flex;
+                    gap:0.5rem;
                     i {
+                        font-size: 1.5rem;
                         color: $color1;
                     }
                 }

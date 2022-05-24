@@ -3,4 +3,27 @@
     min-height: 30rem;
     background-position: center;
     background-size: cover;
+    color: white;
+    text-align: center;
+padding-top: 2rem ;
+
+    #partners-title {
+
+        i {
+            font-size: 3rem;
+            color: $color1;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: $color1;
+        }
+
+        hr {
+            width: 30%;
+            border-color: $color2;
+        }
+        
+
+    }
 }

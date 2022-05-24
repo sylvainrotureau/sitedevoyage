@@ -13,14 +13,27 @@
 
 <body>
     <section id="top">
+        <div id="top-title">
+            <i class="fas fa-compass"></i>
+            <span>travelblog.com</span>
+            <p>Racontez-nous vos plus beaux souvenirs</p>
+        </div>
     </section>
 
-    <section id="nav">
-        <div id="choice1"><a href="#">Destinations</a></div>
-        <div id="choice2"><a href="#">Itinéraires et circuits</a></div>
-        <div id="choice3"><a href="#">Top 10 articles</a></div>
-        <div id="choice4"><a href="#">Poster un article</a></div>
-    </section>
+    <nav id="navbar">
+
+        <div id="hamburgerAndTitle">
+            <i id="hamburger" class="fas fa-bars fa-2x"></i>
+            <h2 id="navbarTitle"><i class="far fa-compass"></i></h2>
+        </div>
+
+        <div id="navigationLinks">
+            <a href="index.html">Destinations</a>
+            <a href="index.html">Itinéraires et circuits</a>
+            <a href="index.html">Top 10 articles</a>
+            <a href="index.html">Poster un article</a>
+        </div>
+    </nav>
 
     <section id="header">
         <div class="header-card">
@@ -32,7 +45,9 @@
             <div class="article">
                 <h3 class="header-h3">Bali</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A asperiores, blanditiis tempora quasi
+                    eaque deserunt, eveniet nemo nesciunt deleniti quod ducimus esse repudiandae quaerat cupiditate
+                    voluptate quibusdam doloremque animi delectus.</p>
             </div>
             <div class="header-author">
                 <img src="./images/users/emilie.jpg" alt="Emilie">
@@ -219,15 +234,16 @@
                 <h3 class="article-h3">
                     Découverte de Montréal
                 </h3>
+                <hr>
                 <div class="article-author-date">
-                    <div class="article-author">
+                    <span class="article-author">
                         <img class="article-author-image" src="./images/users/emma2021.jpg" alt="Emma2021">
-                        Emma 2021
-                    </div>
-                    <div class="article-date">
+                        <span>Emma 2021</span>
+                    </span>
+                    <span class="article-date">
                         <i class="fas fa-clock"></i>
                         12/03/2021 - 10h20
-                    </div>
+                    </span>
                 </div>
 
                 <div class="article-image">
@@ -246,15 +262,17 @@
                 <h3 class="article-h3">
                     Découverte de Montréal
                 </h3>
+                <hr>
                 <div class="article-author-date">
-                    <div class="article-author">
+                    <span class="article-author">
                         <img class="article-author-image" src="./images/users/emma2021.jpg" alt="Emma2021">
-                        Emma 2021
-                    </div>
-                    <div class="article-date">
+                        <span>Emma 2021</span>
+
+                    </span>
+                    <span class="article-date">
                         <i class="fas fa-clock"></i>
                         12/03/2021 - 10h20
-                    </div>
+                    </span>
                 </div>
 
                 <div class="article-image">
@@ -273,15 +291,16 @@
                 <h3 class="article-h3">
                     Découverte de Montréal
                 </h3>
+                <hr>
                 <div class="article-author-date">
-                    <div class="article-author">
+                    <span class="article-author">
                         <img class="article-author-image" src="./images/users/emma2021.jpg" alt="Emma2021">
-                        Emma 2021
-                    </div>
-                    <div class="article-date">
+                        <span>Emma 2021</span>
+                    </span>
+                    <span class="article-date">
                         <i class="fas fa-clock"></i>
                         12/03/2021 - 10h20
-                    </div>
+                    </span>
                 </div>
 
                 <div class="article-image">
@@ -298,11 +317,29 @@
         </div>
     </section>
 
-    <section id="partners"></section>
+    <section id="partners">
+        <div id="partners-title">
+            <i class="fas fa-plane-departure"></i>
+            <h2>Nos partenaires</h2>
+            <hr>
+            <p>PROMO : Bénéficiez de 10% de réduction avec le code : travelblog2021</p>
+        </div>
+    </section>
+
+
     <section id="links">
-        <div #id="link1"><img src="./images/company1.png" alt="Compagnie 1"></div>
-        <div #id="link2"><img src="./images/company2.png" alt="Compagnie 2"></div>
-        <div #id="link3"><img src="./images/company3.png" alt="Compagnie 3"></div>
+        <div #id="link1">
+            Grid Airlines
+            <img src="./images/company1.png" alt="Compagnie 1">
+        </div>
+        <div #id="link2">
+            World Air Company
+            <img src="./images/company2.png" alt="Compagnie 2">
+        </div>
+        <div #id="link3">
+            Sky Masters
+            <img src="./images/company3.png" alt="Compagnie 3">
+        </div>
     </section>
     <section id="footer">
         <p>@ 2021| travelblog.com</p>
@@ -313,6 +350,33 @@
             <i class="fab fa-instagram"></i>
         </div>
     </section>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // au clic sur hamburger, afficher ou masquer le menu (en responsive)
+            $('#hamburger').on('click', function () {
+                if ($('#navigationLinks').css('display') == 'none') {
+                    $('#navigationLinks').css('display', 'block');
+                    $('#navigationLinks').css('display', 'grid');
+                }
+                else {
+                    $('#navigationLinks').css('display', 'none');
+                }
+            });
+
+            // afficher le menu quand on passe en taille desktop (même s'il est masqué)
+            window.addEventListener('resize', () => {
+                let width = window.innerWidth;
+                if (width > 1080) {
+                    $('#navigationLinks').css('display', 'block');
+                    $('#navigationLinks').css('display', 'grid');
+                }
+            });
+        })
+
+    </script>
 
 </body>
 
