@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
 #top {
-  background: url(../images/beach.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/beach.jpg);
   height: 20rem;
   background-position: center;
   background-size: cover;
@@ -52,7 +52,7 @@
 }
 
 #header {
-  background: url(../images/bali.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/bali.jpg);
   min-height: 30rem;
   background-position: center;
   background-size: cover;
@@ -279,7 +279,7 @@
 }
 
 #partners {
-  background: url(../images/plane.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/plane.jpg);
   min-height: 30rem;
   background-position: center;
   background-size: cover;
@@ -351,8 +351,12 @@
 }
 
 @media screen and (max-width: 991px) {
-  body {
-    border: 10px solid black;
+  #navbar {
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 15vh;
   }
   #navbar #hamburgerAndTitle {
     display: flex;
@@ -393,9 +397,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    border: 10px solid red;
-  }
   #header {
     grid-template-columns: 5% 60% 35%;
   }
@@ -441,11 +442,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 'link1' 'link2' 'link3';
-  }
-  #links div {
-    display: flex;
-    align-self: center;
-    justify-content: center;
   }
   #links div img {
     width: 70%;

@@ -1,5 +1,10 @@
 #partners {
-    background: url(../images/plane.jpg);
+    background-image: linear-gradient(
+        rgba(0, 242, 96, 0.4),
+        rgba(7, 117, 230, 0.3)
+      ),
+      url(../images/plane.jpg);
+    
     min-height: 30rem;
     background-position: center;
     background-size: cover;
